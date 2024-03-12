@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="SubekshyaDhamala_2358900_style.css">
+</head>
+<body>
+  <div class="box container">
+    <h1>Weather App</h1>
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button onclick="searchWeather()">Search</button>
+    </div>
+    <div id="error-message"></div>
+    <div id="weather-info">
+      <h2 class="city"></h2>
+      <p class="date"></p>
+      <p class="condition"></p>
+      <p class="temperature"></p>
+      <p class="pressure"></p>
+      <p class="wind-speed"></p>
+      <p class="humidity"></p>
+    </div>
+    <button id="view-past-data-button" onclick="fetchAndDisplayPastData(document.getElementById('city-input').value)">View Past Data</button>
+    <div id="past-data-container">
+      <!-- Past weather data and "Show Past Data" button will be displayed here -->
+    </div>
+  </div>
+
+  <script src="SubekshyaDhamala_2358900_script.js"></script>
+</body>
+</html>
